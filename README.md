@@ -9,8 +9,8 @@ Exploratory data analysis on the Uber Fares dataset from Kaggle, covering data c
 ## Project structure
 
 ```
-├── ejercicio1_limpieza.py    # Data cleaning and validation
-├── ejercicio2_profiling.py   # Profiling and analysis
+├── data_cleaning.py    # Data cleaning and validation
+├── data_analysis.py    # Profiling and analysis
 ├── charts/                   # Generated charts
 │   ├── fare_distribution.png
 │   ├── trips_by_hour.png
@@ -21,7 +21,7 @@ Exploratory data analysis on the Uber Fares dataset from Kaggle, covering data c
 
 ## What each script does
 
-**ejercicio1_limpieza.py**
+**data_cleaning.py**
 - Removes duplicate rows and useless columns
 - Drops rows with null coordinates
 - Filters out invalid fare amounts (≤ 0) and passenger counts (< 1 or > 6)
@@ -29,7 +29,7 @@ Exploratory data analysis on the Uber Fares dataset from Kaggle, covering data c
 - Converts datetime column to proper format
 - Applies min-max normalization to fare and passenger columns
 
-**ejercicio2_profiling.py**
+**data_analysis.py**
 - Generates a full HTML profiling report with ydata-profiling
 - Detects outliers in fare_amount using the IQR method
 - Extracts new features from the datetime column (hour, weekday, month)
@@ -59,11 +59,11 @@ pip install pandas numpy matplotlib seaborn ydata-profiling
 ```
 3. Run the cleaning script first:
 ```
-python ejercicio1_limpieza.py
+python data_cleaning.py.py
 ```
 4. Then run the analysis:
 ```
-python ejercicio2_profiling.py
+python data_analysis.py
 ```
 
 ## Tech
