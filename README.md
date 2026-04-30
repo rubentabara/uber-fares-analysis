@@ -16,7 +16,6 @@ Exploratory data analysis on the Uber Fares dataset from Kaggle, covering data c
 │   ├── trips_by_hour.png
 │   ├── avg_fare_by_hour.png
 │   └── correlation_heatmap.png
-└── informe_uber.html         # Full profiling report (ydata-profiling)
 ```
 
 ## What each script does
@@ -59,7 +58,7 @@ pip install pandas numpy matplotlib seaborn ydata-profiling
 ```
 3. Run the cleaning script first:
 ```
-python data_cleaning.py.py
+python data_cleaning.py
 ```
 4. Then run the analysis:
 ```
